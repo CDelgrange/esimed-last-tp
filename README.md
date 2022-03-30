@@ -25,3 +25,12 @@
 > Précision: Dans la classe `WebServer`, une méthode a été ajoutée pour synchroniser la DB. Cette méthode est lancée au démarrage du serveur web. Elle permet, à partir des models de DB créés dans notre code, de générer les bonnes tables en DB.
 >
 > Ainsi, si vous vous trompez dans la définition de votre model, il se peut qu'il faille aller dans `Adminer` (http://localhost:8080), pour supprimer la table, de façon à ce que le serveur la recréé au démarrage. Gérez cela en fonction de votre besoin.
+
+### Optional steps
+
+- Créez un model Picture (qui représentera la photo de vos utilisateurs)
+- Ce model contiendra les champs: `uniqueName` (obligatoire), `originalName` (obligatoire), `path` (obligatoire), `mimeType`, `size`
+- Une foreign key doit exister entre la table User et la table Picture (https://sequelize.org/master/manual/assocs.html)
+- Créez un controller pour les pictures, qui aura 2 routes: une d'upload (en POST) et une de donwload (en GET)
+- Pour l'upload, vous pourrez utiliser ce middleware: http://expressjs.com/en/resources/middleware/multer.html
+- Pour le download vous devriez trouver votre bonheur sur la doc d'Express

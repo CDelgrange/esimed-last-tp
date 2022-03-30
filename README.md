@@ -29,7 +29,7 @@
 ### Optional steps
 
 - Créez un model Picture (qui représentera la photo de vos utilisateurs)
-- Ce model contiendra les champs: `uniqueName` (obligatoire), `originalName` (obligatoire), `path` (obligatoire), `mimeType`, `size`
+- Ce model contiendra les champs: `id` (même contrainte que pour le User), `uniqueName` (obligatoire), `originalName` (obligatoire), `path` (obligatoire), `mimeType`, `size`
 - Une foreign key doit exister entre la table User et la table Picture (https://sequelize.org/master/manual/assocs.html)
 - Créez un controller pour les pictures, qui aura 2 routes: une d'upload (en POST) et une de donwload (en GET)
 - Pour l'upload, vous pourrez utiliser ce middleware: http://expressjs.com/en/resources/middleware/multer.html

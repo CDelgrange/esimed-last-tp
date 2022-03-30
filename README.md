@@ -33,4 +33,5 @@
 - Une foreign key doit exister entre la table User et la table Picture (https://sequelize.org/master/manual/assocs.html)
 - Créez un controller pour les pictures, qui aura 2 routes: une d'upload (en POST) et une de donwload (en GET)
 - Pour l'upload, vous pourrez utiliser ce middleware: http://expressjs.com/en/resources/middleware/multer.html
+- Lors de l'upload, il faudra passer également l'id de l'utilisateur dans la requête pour qu'il soit enregistré dans la table Picture
 - Pour le download vous devriez trouver votre bonheur sur la doc d'Express
